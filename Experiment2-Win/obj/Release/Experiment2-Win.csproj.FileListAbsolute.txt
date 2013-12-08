@@ -1,0 +1,8 @@
+C:\Users\WinDevsAdmin\Documents\GitHub\GuiTestWin\Experiment2-Win\bin\Release\Experiment2-Win.exe.config
+C:\Users\WinDevsAdmin\Documents\GitHub\GuiTestWin\Experiment2-Win\bin\Release\Experiment2-Win.exe
+C:\Users\WinDevsAdmin\Documents\GitHub\GuiTestWin\Experiment2-Win\bin\Release\Experiment2-Win.pdb
+C:\Users\WinDevsAdmin\Documents\GitHub\GuiTestWin\Experiment2-Win\obj\Release\Experiment2-Win.csprojResolveAssemblyReference.cache
+C:\Users\WinDevsAdmin\Documents\GitHub\GuiTestWin\Experiment2-Win\obj\Release\Experiment2_Win.Properties.Resources.resources
+C:\Users\WinDevsAdmin\Documents\GitHub\GuiTestWin\Experiment2-Win\obj\Release\Experiment2-Win.csproj.GenerateResource.Cache
+C:\Users\WinDevsAdmin\Documents\GitHub\GuiTestWin\Experiment2-Win\obj\Release\Experiment2-Win.exe
+C:\Users\WinDevsAdmin\Documents\GitHub\GuiTestWin\Experiment2-Win\obj\Release\Experiment2-Win.pdb

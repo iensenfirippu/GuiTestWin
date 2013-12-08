@@ -1,0 +1,7 @@
+C:\Users\WinDevsAdmin\Documents\GitHub\GuiTestWin\Experiment2-Win\bin\Debug\Experiment2-Win.exe.config
+C:\Users\WinDevsAdmin\Documents\GitHub\GuiTestWin\Experiment2-Win\bin\Debug\Experiment2-Win.exe
+C:\Users\WinDevsAdmin\Documents\GitHub\GuiTestWin\Experiment2-Win\bin\Debug\Experiment2-Win.pdb
+C:\Users\WinDevsAdmin\Documents\GitHub\GuiTestWin\Experiment2-Win\obj\Debug\Experiment2_Win.Properties.Resources.resources
+C:\Users\WinDevsAdmin\Documents\GitHub\GuiTestWin\Experiment2-Win\obj\Debug\Experiment2-Win.csproj.GenerateResource.Cache
+C:\Users\WinDevsAdmin\Documents\GitHub\GuiTestWin\Experiment2-Win\obj\Debug\Experiment2-Win.exe
+C:\Users\WinDevsAdmin\Documents\GitHub\GuiTestWin\Experiment2-Win\obj\Debug\Experiment2-Win.pdb
