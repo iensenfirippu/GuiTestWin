@@ -82,12 +82,12 @@ namespace Experiment1_Win
 		public void OnPaint(object sender, PaintEventArgs args)
 		{
 			_controlspainted++;
-			if (_controlspainted > 100)
+			if (_controlspainted >= 100)
 			{
 				_gt.Stop();
 				this.Close();
 			}
-			Console.WriteLine(_controlspainted.ToString());
+			//Console.WriteLine(_controlspainted.ToString());
 		}
 	}
 }
