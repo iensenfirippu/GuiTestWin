@@ -17,7 +17,7 @@ namespace Experiment1_Win
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Form1(new GuiTracker("Experiment1", GuiTracker.Framework.Dnet, GuiTracker.Toolkit.Win)));
+			Application.Run(new Form1(new GuiTracker("Experiment1", GuiTracker.Framework.Mono, GuiTracker.Toolkit.Win)));
 		}
 	}
 }

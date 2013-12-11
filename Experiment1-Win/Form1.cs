@@ -13,6 +13,7 @@ namespace Experiment1_Win
 {
 	public partial class Form1 : Form
 	{
+		private const bool AUTOCLOSE = true;
 		private const int COLUMNS = 10;
 		private const int ROWS = 20;
 		private const int LABELWIDTH = 100;
@@ -27,7 +28,9 @@ namespace Experiment1_Win
 			InitializeComponent();
 			_gt = gt;
 
+			_gt.Usage.TakeSnapshot("init start");
 			DoStuff();
+			_gt.Usage.TakeSnapshot("init end");
 		}
 	
 		private void DoStuff()
@@ -73,19 +76,21 @@ namespace Experiment1_Win
 			this.Controls.Add(panel);
 			this.AutoScroll = true;
 			this.WindowState = FormWindowState.Maximized;
-		
-			//Console.WriteLine("Executed in: {0}", _gt.ExecutionTime.ToString());
-			//Console.WriteLine("CPU Usage: {0}", (_gt.Usage.Cpu / System.Environment.ProcessorCount).ToString());
-			//Console.WriteLine("RAM Usage: {0}", _gt.Usage.Ram.ToString());
 		}
 
 		public void OnPaint(object sender, PaintEventArgs args)
 		{
 			_controlspainted++;
-			if (_controlspainted >= 100)
+			if (_controlspainted == 1)
 			{
+				_gt.Usage.TakeSnapshot("draw start");
+			}
+			else if (_controlspainted >= 100)
+			{
+				_gt.Usage.TakeSnapshot("draw end");
 				_gt.Stop();
-				this.Close();
+
+				if (AUTOCLOSE) { this.Close(); }
 			}
 			//Console.WriteLine(_controlspainted.ToString());
 		}
