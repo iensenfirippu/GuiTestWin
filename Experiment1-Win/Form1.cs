@@ -17,7 +17,7 @@ namespace Experiment1_Win
 		private const int COLUMNS = 10;
 		private const int ROWS = 20;
 		private const int LABELWIDTH = 100;
-		private const int ENTRYWIDTH = 100;
+		private const int TEXTWIDTH = 100;
 
 		private int _controlspainted = 0;
 		
@@ -65,8 +65,8 @@ namespace Experiment1_Win
 						TextBox text = new TextBox();
 						text.Dock = DockStyle.Fill;
 						text.Text = _gt.Random.ShortString;
-						text.Width = ENTRYWIDTH;
-						//text.Paint += OnPaint;
+						text.Width = TEXTWIDTH;
+						//text.Paint += OnPaint; // The paint event is never fired on textboxes
 						table.Controls.Add(text, x, y);
 					}
 				}
