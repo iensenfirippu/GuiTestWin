@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GuiTestLib;
 
 namespace Experiment2_Win
 {
@@ -16,7 +17,7 @@ namespace Experiment2_Win
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Form1());
+			Application.Run(new Form1(new GuiTracker("Experiment2", GuiTracker.Framework.Dnet, GuiTracker.Toolkit.Win)));
 		}
 	}
 }
