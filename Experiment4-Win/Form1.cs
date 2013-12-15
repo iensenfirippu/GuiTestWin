@@ -13,7 +13,6 @@ using GuiTestLib;
 
 namespace Experiment4_Win
 {
-
 	public partial class Form1 : Form
 	{
 		private const bool AUTOCLOSE = false;
@@ -89,6 +88,9 @@ namespace Experiment4_Win
 					SqlQuery("SELECT ContactTitle, ContactName, CompanyName, Address, City, Country FROM Suppliers");
 					break;
 				case 6:
+					_gt.Usage.TakeSnapshot("draw end");
+					_gt.Stop();
+
 					if (AUTOCLOSE) { this.Close(); }
 					else { Console.WriteLine("finished"); }
 					break;
@@ -118,6 +120,10 @@ namespace Experiment4_Win
 		public void OnCellPainting(object sender, DataGridViewCellPaintingEventArgs e)
 		{
 			_paintedcells++;
+			if (_querynumber == 1 && _paintedcells == 1)
+			{
+				_gt.Usage.TakeSnapshot("draw start");
+			}
 			if (_paintedcells == _expectedcells)
 			{
 				_paintedcells = 0;

@@ -12,7 +12,6 @@ using GuiTestLib;
 
 namespace Experiment3_Win
 {
-
 	public partial class Form1 : Form
 	{
 		private const bool AUTOCLOSE = true;
